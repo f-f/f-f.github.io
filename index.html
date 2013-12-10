@@ -39,9 +39,42 @@
 		$("#profileImg").css('-webkit-border-radius', emSize/2);
 		$("#profileImg").css('-moz-border-radius', emSize/2);
 
+		//load background
+		$("#landing").css('background', 'url(photos/selfie.jpg) no-repeat center');
+		$("#landing").css('background-size', '100% auto');
 
-		$("nav > a").mouseover(function(){
-			//$(this).css( "border", "3px double red" );
+		$("nav > a").hover(function(){
+			$(this).children(".tt").animate({
+				height: "4em",
+				width: "4em",
+				top: 0,
+				left: 0,
+				opacity: 1,
+			}, 200);
+			$(this).children(".tt").children("span").animate({
+				height: "2em",
+				width: "4em",
+				opacity: 1,
+			}, 200);
+			$(this).children("svg").animate({
+				opacity: 0.25
+			}, 200);
+		}, function(){
+			$(this).children(".tt").animate({
+				height: 0,
+				width: 0,
+				top: "50%",
+				left: "50%",
+				opacity: 0,
+			}, 200);
+			$(this).children(".tt").children("span").animate({
+				height: "0em",
+				width: "0em",
+				opacity: 0,
+			}, 200);
+			$(this).children("svg").animate({
+				opacity: 1
+			}, 200);
 		});
 	});
 	</script>
@@ -50,17 +83,17 @@
 <body>
 
 <!-- SVG SOURCE -->
-<svg height="0" width="0" style="position:absolute;margin-left: -100%;">
+<svg height="0" width="0" style="position:absolute;margin-left: -100%;pointer-events: all;">
 	<g id="logo">
-		<path id="firstBottom" d="M 150 250 l 0 400" stroke="black" stroke-width="14" fill="none"/>
-		<path id="firstMiddle" d="M 50 250 l 200 0" stroke="black" stroke-width="14" fill="none"/>
-		<path id="firstCurve" d="M 150 250 q 0 -200 100 -200" stroke="black" stroke-width="14" fill="none"/>
-		<path id="firstHead" d="M 250 50 l 300 0" stroke="black" stroke-width="14" fill="none"/>
-		<path id="conjunction" d="M 550 50 l 0 700" stroke="black" stroke-width="14" fill="none"/>
-		<path id="secondBase" d="M 350 750 l 200 0" stroke="black" stroke-width="14" fill="none"/>
-		<path id="secondBottom" d="M 350 350 l 0 400" stroke="black" stroke-width="14" fill="none"/>
-		<path id="secondMiddle" d="M 250 350 l 200 0" stroke="black" stroke-width="14" fill="none"/>
-		<path id="secondCurve" d="M 350 350 q 0 -200 100 -200" stroke="black" stroke-width="14" fill="none"/>
+		<path id="firstBottom" d="M 150 250 l 0 400" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="firstMiddle" d="M 50 250 l 200 0" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="firstCurve" d="M 150 250 q 0 -200 100 -200" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="firstHead" d="M 250 50 l 300 0" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="conjunction" d="M 550 50 l 0 700" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="secondBase" d="M 350 750 l 200 0" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="secondBottom" d="M 350 350 l 0 400" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="secondMiddle" d="M 250 350 l 200 0" stroke="black" stroke-width="14" fill="transparent"/>
+		<path id="secondCurve" d="M 350 350 q 0 -200 100 -200" stroke="black" stroke-width="14" fill="transparent"/>
 	
 		<circle id="pointA" cx="50" cy="250" r="7"/> 
 		<circle id="pointB" cx="150" cy="650" r="7"/>
@@ -102,13 +135,60 @@
 	<g id="myblog-logo-icon">
 		<g>
 			<path fill="#FF8C00" d="M16,32c8.837,0,16-7.163,16-16c0-8.836-7.163-16-16-16C7.164,0,0,7.164,0,16C0,24.837,7.164,32,16,32"></path>
-			<text x="0" y="12" font-size="11" font-weight="400" fill="#111111">
+			<text x="0" y="12" font-size="11" font-weight="400" fill="#FFFFFF">
 				<tspan x="8" dy="0" font-family="Open Sans">my</tspan>
 				<tspan x="4" dy="12" font-family="Open Sans">Blog</tspan>
 			</text>
 		</g>
 	</g>
 
+	<g id="blog-logo-icon">
+		<path fill="#FF8C00" transform="scale(16)" d="M16,32c8.836,0,16-7.163,16-16c0-8.836-7.164-16-16-16S0,7.164,0,16C0,24.837,7.163,32,16,32"></path>
+		<g id="Grid_1_" fill="#FFFFFF" transform="scale(0.66),translate(168,96)">
+			<g id="Layer_1_1_">
+				<g id="Grid">
+					<g>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="480" x2="512" y2="480"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="448" x2="512" y2="448"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="416" x2="512" y2="416"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="384" x2="512" y2="384"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="352" x2="512" y2="352"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="320" x2="512" y2="320"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="288" x2="512" y2="288"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="256" x2="512" y2="256"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="224" x2="512" y2="224"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="192" x2="512" y2="192"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="160" x2="512" y2="160"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="128" x2="512" y2="128"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="96" x2="512" y2="96"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="64" x2="512" y2="64"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="0" y1="32" x2="512" y2="32"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="480" y1="0" x2="480" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="448" y1="0" x2="448" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="416" y1="0" x2="416" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="384" y1="0" x2="384" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="352" y1="0" x2="352" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="320" y1="0" x2="320" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="288" y1="0" x2="288" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="256" y1="0" x2="256" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="224" y1="0" x2="224" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="192" y1="0" x2="192" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="160" y1="0" x2="160" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="128" y1="0" x2="128" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="96" y1="0" x2="96" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="64" y1="0" x2="64" y2="512"/>
+						<line style="fill:none;stroke:#A9CCDB;stroke-miterlimit:10;" x1="32" y1="0" x2="32" y2="512"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<path d="M192,96v48c47.011,0,91.209,18.307,124.451,51.549S368,272.988,368,320h48C416,196.289,315.712,96,192,96z"/>
+				<path d="M192,0v48c36.741,0,72.357,7.185,105.859,21.355c32.384,13.697,61.478,33.316,86.474,58.312   c24.995,24.996,44.614,54.09,58.312,86.474C456.815,247.643,464,283.26,464,320h48C512,143.27,368.73,0,192,0z"/>
+				<path d="M207.999,192C159.999,224,96,224,96,224C96,352,0,448,0,448l20.687,20.687L148.68,340.692   C145.682,334.427,144,327.41,144,320c0-26.51,21.49-48,48-48s48,21.49,48,48s-21.49,48-48,48c-7.41,0-14.426-1.682-20.692-4.68   L43.313,491.313L64,512c0,0,96-96,224-96c0,0,0-63.973,31.98-111.97c0.013-28.673-10.906-57.348-32.784-79.226   C265.326,202.935,236.663,192,207.999,192z"/>
+			</g>
+		</g>
+	</g>
+		
 	<g id="twitter-logo-icon">
 		<g>
 			<path fill="#28AAE2" d="M16,32c8.837,0,16-7.163,16-16c0-8.836-7.163-16-16-16C7.164,0,0,7.164,0,16C0,24.837,7.164,32,16,32"></path>
@@ -181,17 +261,19 @@
 			<div id="wrapperBody">
 				<div id="profileImg"></div>
 				Hi! I'm Fabrizio Ferrai, a Computer Engineering student at Politecnico di Milano, Italy.<br/>
-				I'm a 21 years old music lover, producer, musician, developer, photographer, and maker, interested in crafting perfection.<br/>
-				I'd love you check out my work: just follow the links below to learn more, and hire me if you like something.</p>			
+				I'm a 21 years old developer, music lover, producer, musician, photographer, and maker, interested in crafting perfection.<br/>
+				I'd love you check out my work: just follow the links below, and contact me if you like something! :)</p>			
 			</div>
 			<div id="wrapperFoot">
 				<nav>
 					<a href="blog">
-						<svg viewBox="0 0 32 32" class="footerIcon">
+						<svg viewBox="0 0 514 514" class="footerIcon">
 							<g filter="">
-								<use xlink:href="#myblog-logo-icon"></use>
+								<use xlink:href="#blog-logo-icon"></use>
 							</g>
 						</svg>
+						<div class="tt"><span class="twoL">my<br/>Blog</span></div>
+						<div class="overlayLink"></div>
 					</a>
 					<a href="https://github.com/ff-">
 						<svg viewBox="0 0 32 32" class="footerIcon">
@@ -199,6 +281,8 @@
 								<use xlink:href="#github-logo-icon"></use>
 							</g>
 						</svg>
+						<div class="tt"><span class="twoL">Some<br/>code</span></div>
+						<div class="overlayLink"></div>
 					</a>
 					<a href="https://www.facebook.com/fabrizio.ferrai">
 						<svg viewBox="0 0 32 32" class="footerIcon">
@@ -206,6 +290,8 @@
 								<use xlink:href="#fb-logo-icon"></use>
 							</g>
 						</svg>
+						<div class="tt"><span class="oneL">Fb</span></div>
+						<div class="overlayLink"></div>
 					</a>
 					<a href="https://plus.google.com/+FabrizioFerrai_ff/">
 						<svg viewBox="0 0 32 32" class="footerIcon">
@@ -213,6 +299,8 @@
 								<use xlink:href="#gplus-logo-icon"></use>
 							</g>
 						</svg>
+						<div class="tt"><span class="oneL">G+</span></div>
+						<div class="overlayLink"></div>
 					</a>
 					<a href="mailto:fabrizio.ferrai@gmail.com">
 						<svg viewBox="0 0 32 32" class="footerIcon">
@@ -220,6 +308,8 @@
 								<use xlink:href="#email-logo-icon"></use>
 							</g>
 						</svg>
+						<div class="tt"><span class="twoL">Hire<br/>Me!</span></div>
+						<div class="overlayLink"></div>
 					</a>
 				</nav>
 			</div>

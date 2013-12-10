@@ -15,7 +15,7 @@ p{
 a{
 	text-decoration: none;
 	color: DarkOrange;
-	font-weight: 400;
+	font-weight: 300;
 	transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
@@ -29,8 +29,6 @@ a:hover{
 }
 
 #landing{
-	background: url(photos/selfie.jpg) no-repeat center;
-	background-size: 100% auto;
 	height: 100%;
 	position: relative;
 }
@@ -102,7 +100,7 @@ a:hover{
 	margin: 0 auto;
 	text-align: center;
 	padding: 1em;
-	height: 3em;
+	height: 4em;
 }
 
 #icons{
@@ -111,24 +109,63 @@ a:hover{
 	text-align: center;
 }
 
-.footerIcon{
-	width: 3em;
-	height: 3em;
-}
-
 #wrapperFoot a{
-	display: inline;
-	width: 3em;
-	height: 3em;
+	display: inline-block;
+	width: 4em;
+	height: 4em;
 	background: none;
 	border-radius: 50%;
 	margin: 0 0.5em;
 	position: relative;
 	overflow: hidden;
+	color: black;
 }
 
-#wrapperFoot a:hover{
-	width: 2.5em;
-	height: 2.5em;
+.footerIcon{
+	width: 4em;
+	height: 4em;
 }
 
+#wrapperFoot .overlayLink{
+	z-index: 480;
+	position: absolute;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	width: 4em;
+	height: 4em;
+}
+
+#wrapperFoot .tt{
+	width: 0;
+	height: 0;
+	background: url(img/w50.png);
+	opacity: 0;
+	position: absolute;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 500;
+}
+
+#wrapperFoot .tt span{
+	position: absolute;
+	top: 50%;
+	left:0;
+	margin-top: -1em;
+	height: 0em;
+	width: 0em;
+	display: inline-block;
+	text-align: center;
+	opacity: 0;
+}
+
+.oneL{
+	line-height: 2em;
+}
+
+.twoL{
+	line-height: 1em;
+}
