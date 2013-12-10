@@ -2,9 +2,16 @@ html, body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	width: 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
+	overflow: hidden;
+	-webkit-transition: opacity 400ms;
+	-moz-transition: opacity 400ms;
+	transition: opacity 400ms;
+	display: block;
+	position: static;
 }
 
 p{
@@ -61,7 +68,7 @@ a:hover{
 
 #wrapperHead{
 	background: white;
-	border-bottom: 0.2em solid DarkOrange;
+	border-bottom: 0.2em solid orange;
 	position: relative;
 	height: 7em;
 }
@@ -79,7 +86,8 @@ a:hover{
 	padding: 1em;
 	background: url(img/w75.png);
 	font-size: 1.4em;
-	letter-spacing: -0.04em
+	letter-spacing: -0.04em;
+	font-weight: 200;
 }
 
 #profileImg{
