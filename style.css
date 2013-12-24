@@ -21,14 +21,14 @@ p{
 
 a{
 	text-decoration: none;
-	color: DarkOrange;
+	color: #00CBFF;
 	font-weight: 300;
 	transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 }
 a:hover{
-	color: orange;
+	color: #00D8FF;
 }
 
 #main{
@@ -68,7 +68,7 @@ a:hover{
 
 #wrapperHead{
 	background: white;
-	border-bottom: 0.2em solid orange;
+	border-bottom: 0.2em solid #00CBFF;
 	position: relative;
 	height: 7em;
 }
