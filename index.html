@@ -35,7 +35,11 @@
 	$(document).ready(function(){
 
 		var elem = document.getElementById("wrapperBody");
-		var emSize = getEmSize(elem)*9; //5 are the ems
+		var profileH = 9
+		if($(document).width() <= getEmSize(document.getElementById("main"))*40){
+			profileH = 5
+		}
+		var emSize = getEmSize(elem)*profileH; //5 are the ems
 		$("#profileImg").css('background', 'url(http://www.gravatar.com/avatar/2643a3783b49696299e801018c6291a5?s=' + emSize + ') no-repeat');
 		$("#profileImg").css('width', emSize);
 		$("#profileImg").css('height', emSize);
@@ -45,7 +49,20 @@
 
 		//load background
 		$("#landing").css('background', 'url(photos/selfie.jpg) no-repeat center');
-		$("#landing").css('background-size', '100% auto');
+
+		function positionBG(){
+			if(($(document).width())/($(document).height()) >= 4272/2848){
+				$("#landing").css('background-size', '100% auto');
+			}
+			else{
+				$("#landing").css('background-size', 'auto 100%');
+			}
+		}
+		positionBG();
+		$(window).resize(function(){
+			positionBG();
+		});
+
 
 		$("nav > a").hover(function(){
 			$(this).children(".tt").animate({
