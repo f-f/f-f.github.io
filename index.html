@@ -35,9 +35,9 @@
 	$(document).ready(function(){
 
 		var elem = document.getElementById("wrapperBody");
-		var profileH = 9
+		var profileH = 9;
 		if($(document).width() <= getEmSize(document.getElementById("main"))*40){
-			profileH = 5
+			profileH = 6;
 		}
 		var emSize = getEmSize(elem)*profileH; //5 are the ems
 		$("#profileImg").css('background', 'url(http://www.gravatar.com/avatar/2643a3783b49696299e801018c6291a5?s=' + emSize + ') no-repeat');
