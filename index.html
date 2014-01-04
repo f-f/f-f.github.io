@@ -33,6 +33,19 @@
 	}
 
 	$(document).ready(function(){
+		//calc age
+		function getAge(dateString) {
+			var today = new Date();
+			var birthDate = new Date(dateString);
+			var age = today.getFullYear() - birthDate.getFullYear();
+			var m = today.getMonth() - birthDate.getMonth();
+			if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+				age--;
+			}
+			return age;
+		}
+
+		$("#age").text(getAge("1992,10,19"));
 
 		var elem = document.getElementById("wrapperBody");
 		var profileH = 9;
@@ -281,7 +294,7 @@
 			<div id="wrapperBody">
 				<div id="profileImg"></div>
 				Hi! I'm Fabrizio Ferrai, a Computer Engineering student at Politecnico di Milano, Italy.<br/>
-				I'm a 21 years old developer, music lover, musician, freetime photographer, and maker, interested in <b>Web development</b> (Python, Javascript, Html5), and <b>Perfection</b>.<br/>
+				I'm a <span id="age"></span> years old developer, music lover, musician, freetime photographer, and maker, interested in <b>Web development</b> (Python, Javascript, Html5), and <b>Perfection</b>.<br/>
 				I'd love you to check out my work: just follow the links below, and contact me if you like something! :)</p>			
 			</div>
 			<div id="wrapperFoot">
