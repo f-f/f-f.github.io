@@ -1,0 +1,27 @@
+<!-- header start -->
+
+{% if page.index %}
+<header class="main-header" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+  <div class="vertical">
+    <div class="main-header-content inner">
+      {% if site.logo %}
+      <a href="{{ site.url }}"><img class="avatar" src="{{ site.logo}}" alt="{{ site.title}}" /></a>
+      {% endif %}
+      <h1 class="page-title">{{ site.title }}</h1>
+      <h2 class="page-description">{{ site.description }}</h2>
+      <p class="header-icons">
+        {% for social in site.social %}
+          {% if social.url %}
+            <a href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}><i class="fa fa-2x fa-{{ social.icon }}"></i></a>
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+  <a class="scroll-down" href="#content"><i class="fa fa-angle-down"></i></a>
+</header>
+{% else %}
+<a href="{{ site.url }}" class="blog-logo"><span class="logo" style="background-image: url({{ site.logo }})"></span></a>
+{% endif %}
+
+<!-- header end -->
