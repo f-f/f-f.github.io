@@ -1,0 +1,38 @@
+---
+layout: default
+index: true
+---
+
+<main id="content"  class="content" role="main">
+  {% if site.tags.featured %}
+  <h5 class="index-headline featured"><span>Featured</span></h5>
+
+  <div class="container featured">
+    {% for post in site.tags.featured %}
+      {% include post.html post=post %}
+    {% endfor %}
+  </div>
+
+  <h5 class="index-headline normal"><span>Regular</span></h5>
+  {% endif %}
+
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      {% include post.html post=post %}
+    {% endfor %}
+  </div>
+
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% endif %}
+  </nav>
+</main>
