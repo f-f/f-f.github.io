@@ -9,3 +9,9 @@ sudo apt-get install ruby2.2 ruby2.2-dev # Ubuntu 14.04
 sudo gem install bundler
 bundler install
 ```
+
+## Preview
+
+```bash
+bundle exec jekyll serve --drafts
+```
