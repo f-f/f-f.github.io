@@ -1,0 +1,44 @@
+title: "Fabrizio Ferrai"
+description: "Software Engineer, <span class='nowrap'>Hacker, Consultant,</span><br/>Music lover, <span class='nowrap'>Clojurian</span>"
+email: fabrizio@ferrai.io
+disqus: "ferrai-io"
+google-analytics-id: 'UA-46402862-5'
+twitter: fabferrai
+github: ff-
+name: 'Fabrizio Ferrai'
+author: 'Fabrizio Ferrai'
+
+logo: "/assets/img/author.png"
+author_image: "/assets/img/author.png"
+bottom: "/assets/img/bottom.jpg"
+
+url: "https://ff_.github.io"
+baseurl: ""
+
+social:
+  - icon:	twitter
+    url:	https://twitter.com/fabferrai
+    desc: "Follow me on twitter"
+    in_article: true
+  - icon:	github-alt
+    url:	https://github.com/ff-
+    desc: "Follow me on github"
+    in_article: true
+  - icon:	slideshare
+    url:	https://slides.ferrai.io
+  - icon:	briefcase
+    url:	https://github.com/ff-/curriculum-vitae/raw/master/cv.pdf
+    desc: "Curriculum Vitae"
+  - icon:	envelope-o
+    url:	mailto:fabrizio@ferrai.io
+
+sharing:
+  twitter:    true
+  facebook:   true
+  hn:         true
+  reddit:     true
+
+paginate:	10
+gems:
+  - jemoji
+  - jekyll-paginate
