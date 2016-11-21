@@ -42,3 +42,4 @@ paginate:	10
 gems:
   - jemoji
   - jekyll-paginate
+  - jekyll-sitemap
