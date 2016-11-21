@@ -16,21 +16,24 @@ url: "https://ff_.github.io"
 baseurl: ""
 
 social:
+#  - icon: male
+#    url:  "/about"
+#    footer_desc: "Read a super long text about me"
   - icon:	twitter
     url:	https://twitter.com/fabferrai
     desc: "Follow me on twitter"
-    in_article: true
   - icon:	github-alt
     url:	https://github.com/ff-
     desc: "Follow me on github"
-    in_article: true
   - icon:	slideshare
     url:	https://slides.ferrai.io
   - icon:	briefcase
     url:	https://github.com/ff-/curriculum-vitae/raw/master/cv.pdf
     desc: "Curriculum Vitae"
+    footer_desc: "Hiring? Grab CV!"
   - icon:	envelope-o
     url:	mailto:fabrizio@ferrai.io
+    footer_desc: Let's chat about space, robots, and business
 
 sharing:
   twitter:    true

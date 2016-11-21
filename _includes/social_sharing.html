@@ -1,15 +1,3 @@
-{% if site.sharing.twitter %}
-<div class='twitter share-button'>
-  <a class="twitter-share-button" data-related="{{ site.twitter }}" href="https://twitter.com/intent/tweet">Tweet</a>
-</div>
-{% endif %}
-
-{% if site.sharing.facebook %}
-<div class='facebook share-button'>
-  <div class="fb-share-button" data-layout="button_count"></div>
-</div>
-{% endif %}
-
 {% if site.sharing.hn %}
 <div class='hn share-button'>
   <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}" data-count="horizontal">Submit on Hacker News</a>
@@ -19,5 +7,16 @@
 {% if site.sharing.reddit %}
 <div class='reddit share-button'>
   <a href="//www.reddit.com/submit" onclick="window.open('//www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title | cgi_escape }}'); return false"> <img src="//www.redditstatic.com/spreddit7.gif" alt="submit to reddit" border="0" /> </a>
+</div>
+{% endif %}
+{% if site.sharing.twitter %}
+<div class='twitter share-button'>
+  <a class="twitter-share-button" data-related="{{ site.twitter }}" href="https://twitter.com/intent/tweet">Tweet</a>
+</div>
+{% endif %}
+
+{% if site.sharing.facebook %}
+<div class='facebook share-button'>
+  <div class="fb-share-button" data-layout="button_count"></div>
 </div>
 {% endif %}
