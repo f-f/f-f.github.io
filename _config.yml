@@ -1,5 +1,5 @@
 title: "Fabrizio Ferrai"
-description: "Software Engineer, <span class='nowrap'>Hacker, Consultant,</span><br/>Music lover, <span class='nowrap'>Clojurian</span>"
+description: "&laquo;Insert smart quote here&raquo;<br/>Software Engineer, <span class='nowrap'>Consultant, Clojurian</span>"
 email: fabrizio@ferrai.io
 disqus: "ferrai-io"
 google-analytics-id: 'UA-46402862-5'
@@ -21,18 +21,20 @@ social:
 #    footer_desc: "Read a super long text about me"
   - icon:	twitter
     url:	https://twitter.com/fabferrai
-    desc: "Follow me on twitter"
+    desc: "Follow on Twitter!"
   - icon:	github-alt
     url:	https://github.com/ff-
-    desc: "Follow me on github"
+    desc: "Follow on Github!"
   - icon:	slideshare
     url:	https://slides.ferrai.io
-  - icon:	briefcase
+    desc: "In here there are some links in which I explain stuff to people and they actually get something"
+  - icon:	magic
     url:	https://github.com/ff-/curriculum-vitae/raw/master/cv.pdf
     desc: "Curriculum Vitae"
     footer_desc: "Hiring? Grab CV!"
   - icon:	envelope-o
     url:	mailto:fabrizio@ferrai.io
+    desc: "Yep, that's my email."
     footer_desc: Let's chat about space, robots, and business
 
 sharing:
