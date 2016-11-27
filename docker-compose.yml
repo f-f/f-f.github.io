@@ -1,0 +1,12 @@
+blog:
+  image: nginx
+  volumes:
+   - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  command: /bin/bash -c "nginx -g 'daemon off;'"
+  expose:
+    - "80"
+  restart: always
+  environment:
+    VIRTUAL_HOST: www.ferrai.io,ferrai.io
+    LETSENCRYPT_HOST:  www.ferrai.io,ferrai.io
+    LETSENCRYPT_EMAIL: fabrizio@ferrai.io
