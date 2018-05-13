@@ -45,7 +45,7 @@ sharing:
 
 paginate:	10
 permalink: '/:year/:title/'
-gems:
+plugins:
   - jemoji
   - jekyll-paginate
   - jekyll-sitemap

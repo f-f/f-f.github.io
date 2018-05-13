@@ -3,11 +3,11 @@
 ## Building
 
 ```bash
-sudo apt-add-repository ppa:brightbox/ruby-ng
-sudo apt-get update
-sudo apt-get install ruby2.2 ruby2.2-dev # Ubuntu 14.04
-sudo gem install bundler
-bundler install
+# Prerequisite: install ruby in some way.
+# For future me: I'm sorry for all of this,
+# next time we'll build another static site generator.
+gem install bundler
+bundle install
 ```
 
 ## Preview
