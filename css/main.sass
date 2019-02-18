@@ -249,7 +249,7 @@ body
   margin: 0
   padding: 16px 0
   span
-    color: #b3b3b1
+    color: #737371
     font-size: $rs/8*5
     text-transform: uppercase
     letter-spacing: 1px
@@ -452,7 +452,7 @@ body
     .author-name
       display: inline
     .post-meta-text
-      color: #b3b3b1
+      color: #737371
       letter-spacing: -0.02em
       font-weight: 400
       font-style: normal
@@ -575,8 +575,6 @@ body
       @include respond-to(800)
         width: 100%
         padding-bottom: $rs*2
-      .index-headline
-        padding-bottom: 32px
       a
         color: #000
         text-decoration: none
@@ -607,16 +605,12 @@ body
         padding-left: 100px
         &.published
           color: #999
-      .bio
-        padding-top: 10px
     .isRight
       float: right
       width: 47%
       @include box-sizing(border-box)
       @include respond-to(800)
         width: 100%
-      .index-headline
-        padding-bottom: 32px
       .site-footer
         margin: 0
         padding: 0
@@ -636,11 +630,11 @@ body
           font-weight: 700
           color: #333
 .share
-  padding: 30px 0 0
+  padding: 0px 0 0
   .share-button
     vertical-align: top
     margin: 0
-    padding: 5px 5px 5px 0
+    padding: 0px 15px 0px 0
     display: inline-block
   a
     text-decoration: none
@@ -713,11 +707,6 @@ body
       border-radius: 999em
       line-height: 44px
       padding: 0 18px
-
-#disqus_thread
-  margin-top: $rs*2
-.post-tag-articleimage
-  display: none
 
 pre,
 code

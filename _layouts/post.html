@@ -39,21 +39,16 @@ layout: default
     </footer>
     <div class="bottom-teaser cf">
       <div class="isLeft">
-        <h5 class="index-headline featured"><span>Hey, it's very nice that you got till here!</span></h5>
+        <h5 class="index-headline featured"><span>Thanks for reading!</span></h5>
         <section class="author">
-          <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
-          <h4>{{ site.author }}</h4>
-          <p class="bio">{{ site.description }}</p>
-          {% comment %}
-          <hr>
-          <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
-          {% endcomment %}
+          <div class="author-image" style="background-image: url({{site.twitter_image}})">Blog Logo</div>
+          <p class="twitter-pitch">For more bite-sized thoughts, you might want to follow me on Twitter:</p>
+          <p style="margin-top: 1em;"><a href="https://twitter.com/fabferrai?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @fabferrai</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
         </section>
       </div>
       <div class="isRight">
-        <h5 class="index-headline featured"><span>Shaaaaaaare</span></h5>
+        <h5 class="index-headline featured"><span>Spam some people with this</span></h5>
         <footer class="site-footer">
-          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Also, subscriiiiibe.</span></a>
           <section class="share">
             {% include social_sharing.html %}
           </section>

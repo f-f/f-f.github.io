@@ -1,7 +1,6 @@
 title: "Fabrizio Ferrai"
-description: "&laquo;This is a meta-quote about quotes in people's bios&raquo;<br/>Software Engineer, Hacker, <span class='nowrap'>Functional Programmer</span>"
+description: "Trying to make the world a nicer place to be in, all together.<br/>Software Engineer, Hacker, <span class='nowrap'>Functional Programmer</span>"
 email: fabrizio@ferrai.io
-disqus: "ferrai-io"
 google-analytics-id: 'UA-46402862-5'
 twitter: fabferrai
 github: f-f
@@ -10,36 +9,37 @@ author: 'Fabrizio Ferrai'
 
 logo: "/assets/img/author.png"
 author_image: "/assets/img/author.png"
+twitter_image: "/assets/img/small-profile.jpg"
 bottom: "/assets/img/bottom.jpg"
 
 url: "https://ferrai.io"
 baseurl: ""
 
 social:
-#  - icon: male
-#    url:  "/about"
-#    footer_desc: "Read a super long text about me"
+  - icon: user-circle-o
+    url:  "/about"
+    footer_desc: "Literally the story of my life"
   - icon:	twitter
     url:	https://twitter.com/fabferrai
     desc: "Follow on Twitter!"
+    footer_desc: "I have DMs open on Twitter!"
   - icon:	github-alt
     url:	https://github.com/f-f
     desc: "Follow on Github!"
-  - icon:	slideshare
-    url:	https://slides.ferrai.io
-    desc: "In here there are some links in which I explain stuff to people and they actually get something"
+#  - icon:	slideshare
+#    url:	https://slides.ferrai.io
+#    desc: "In here there are some links in which I try to enthusiastically explain stuff to an audience"
   - icon:	magic
     url:	https://github.com/f-f/curriculum-vitae/raw/master/cv.pdf
     desc: "Curriculum Vitae"
-    footer_desc: "Hiring? Grab CV!"
+    footer_desc: "Probably outdated CV"
   - icon:	envelope-o
     url:	mailto:fabrizio@ferrai.io
     desc: "Yep, that's my email."
-    footer_desc: Let's chat about space, robots, and business
+    footer_desc: Let's chat about music, tech, equality, business, food, philosophy, rockets..
 
 sharing:
   twitter:    true
-  facebook:   true
   hn:         true
   reddit:     true
 
