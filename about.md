@@ -28,7 +28,7 @@ I also speak at conferences sometimes. My last recorded talks have been:
 - **"Write yourself a compiler in Clojure: Dhall edition"**  
   Clojure Meetup, Helsinki - 2019-01-14 ([video][dhall-clj-video], [slides][dhall-clj-slides], [code][dhall-clj-code])
 - **"Purely Functional DevOps with Dhall"**  
-  Small FP Conf, Helsinki 2018-09-13 ([video][dhall-devops-video], [slides][dhall-devops-slides])
+  Small FP Conf, Helsinki - 2018-09-13 ([video][dhall-devops-video], [slides][dhall-devops-slides])
 
 ### Music
 
