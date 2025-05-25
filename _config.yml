@@ -12,6 +12,7 @@ author_image: "/assets/img/author.png"
 twitter_image: "/assets/img/small-profile.jpg"
 bottom: "/assets/img/bottom.jpg"
 
+encoding: utf-8
 url: "https://ferrai.io"
 baseurl: ""
 
